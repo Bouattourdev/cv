@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mohamed Amine Bouattour</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">MAB</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="parcours.html" class="nav-link">Parcours Académique</a></li>
+                <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="stages.html" class="nav-link">Stages & Expériences</a></li>
+                <li><a href="manifestations.html" class="nav-link">Manifestations</a></li>
+                <li><a href="matieres.html" class="nav-link">Matières</a></li>
+                <li><a href="passions.html" class="nav-link">Passions</a></li>
+                <li><a href="quiz.html" class="nav-link">Quiz</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="temoignage.html" class="nav-link">Témoignage</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+            <header>
+                <h1 class="section-title">Contactez-moi</h1>
+            </header>
+            <section class="contact-section">
+                <div class="contact-info">
+                    <article class="contact-item">
+                        <h2>Téléphone</h2>
+                        <p><a href="tel:+21650209014">(+216) 50209014</a></p>
+                    </article>
+                    <article class="contact-item">
+                        <h2>Email</h2>
+                        <p><a href="mailto:Bouattouramine.dev@gmail.com">Bouattouramine.dev@gmail.com</a></p>
+                    </article>
+                    <article class="contact-item">
+                        <h2>Adresse</h2>
+                        <p>Sfax, Tunisie</p>
+                    </article>
+                    <article class="contact-item">
+                        <h2>LinkedIn</h2>
+                        <p><a href="https://www.linkedin.com/in/bouattour-mohamed-amine-3a5828211"
+                                target="_blank">Profil LinkedIn</a></p>
+                    </article>
+                </div>
+                <form class="contact-form" action="mailto:Bouattouramine.dev@gmail.com" method="post"
+                    enctype="text/plain">
+                    <h2>Envoyez-moi un message</h2>
+                    <div class="form-group">
+                        <label for="nom">Nom complet *</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sujet">Sujet *</label>
+                        <input type="text" id="sujet" name="sujet" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                </form>
+            </section>
+            <section class="languages">
+                <h2>Langues</h2>
+                <div class="language-tags">
+                    <span class="language-tag">Arabe</span>
+                    <span class="language-tag">Français</span>
+                    <span class="language-tag">Anglais</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mohamed Amine Bouattour. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

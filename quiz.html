@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Mohamed Amine Bouattour</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">MAB</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="parcours.html" class="nav-link">Parcours Académique</a></li>
+                <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="stages.html" class="nav-link">Stages & Expériences</a></li>
+                <li><a href="manifestations.html" class="nav-link">Manifestations</a></li>
+                <li><a href="matieres.html" class="nav-link">Matières</a></li>
+                <li><a href="passions.html" class="nav-link">Passions</a></li>
+                <li><a href="quiz.html" class="nav-link active">Quiz</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="temoignage.html" class="nav-link">Témoignage</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section section-alt">
+        <div class="container">
+            <header>
+                <h1 class="section-title">Quiz Interactif - Développement Web</h1>
+            </header>
+            <section class="quiz-container">
+                <div id="quiz-start" class="quiz-start">
+                    <p>Testez vos connaissances sur le développement web et mes compétences !</p>
+                    <p class="quiz-info">Ce quiz contient 12 questions sur le développement web, les technologies que
+                        j'utilise et mes projets.</p>
+                    <button class="btn btn-primary" onclick="startQuiz()">Commencer le Quiz</button>
+                </div>
+                <div id="quiz-content" class="quiz-content hidden">
+                    <div class="quiz-header">
+                        <div class="quiz-progress">
+                            <div id="progress-bar" class="progress-bar"></div>
+                        </div>
+                        <p class="quiz-question-number">Question <span id="current-question">1</span> sur <span
+                                id="total-questions">12</span></p>
+                    </div>
+                    <div class="quiz-question">
+                        <h2 id="question-text"></h2>
+                        <div id="quiz-options" class="quiz-options"></div>
+                    </div>
+                    <div class="quiz-actions">
+                        <button id="next-btn" class="btn btn-primary hidden" onclick="nextQuestion()">Question
+                            Suivante</button>
+                        <button id="submit-btn" class="btn btn-secondary hidden" onclick="submitQuiz()">Voir les
+                            Résultats</button>
+                    </div>
+                </div>
+                <div id="quiz-results" class="quiz-results hidden">
+                    <h2>Résultats du Quiz</h2>
+                    <div class="score-display">
+                        <p>Votre score: <span id="score">0</span> / <span id="max-score">12</span></p>
+                        <div class="score-percentage">
+                            <div id="score-bar" class="score-bar"></div>
+                        </div>
+                    </div>
+                    <div id="results-details"></div>
+                    <button class="btn btn-primary" onclick="restartQuiz()">Recommencer</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mohamed Amine Bouattour. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="quiz.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
